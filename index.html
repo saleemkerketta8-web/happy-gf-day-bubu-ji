@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For My Bubu 💗</title>
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family: "Segoe UI", system-ui, sans-serif;
+    background:#fff7fb;color:#442536;overflow-x:hidden;
+  }
+  .hearts{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden}
+  .heart{position:absolute;bottom:-40px;font-size:20px;animation:float 7s linear infinite;opacity:.6}
+  @keyframes float{
+    0%{transform:translateY(0) rotate(0);opacity:0}
+    15%{opacity:.65} 100%{transform:translateY(-110vh) rotate(360deg);opacity:0}
+  }
+  nav{
+    position:fixed;top:0;width:100%;z-index:10;padding:16px 6%;
+    display:flex;justify-content:space-between;align-items:center;
+    background:rgba(255,247,251,.72);backdrop-filter:blur(12px);
+    border-bottom:1px solid rgba(255,105,150,.12)
+  }
+  .logo{font-weight:800;color:#e83e78;font-size:20px}
+  nav a{color:#6e4052;text-decoration:none;margin-left:20px;font-size:14px}
+  section{position:relative;z-index:1;min-height:100vh;padding:110px 8% 70px}
+  .hero{display:grid;place-items:center;text-align:center;
+    background:radial-gradient(circle at 50% 30%,#ffd9e8 0,#fff7fb 52%,#fff 100%)}
+  .badge{display:inline-block;background:#fff;border:1px solid #ffd0df;padding:8px 16px;border-radius:999px;color:#df3b73;font-size:13px;margin-bottom:20px}
+  h1{font-size:clamp(48px,9vw,96px);line-height:.95;color:#d92f6c}
+  .hero h2{font-size:clamp(22px,4vw,38px);margin:20px 0;color:#593245}
+  .hero p{max-width:620px;margin:auto;color:#79596a;font-size:17px;line-height:1.7}
+  .btn{
+    display:inline-block;margin-top:30px;padding:14px 25px;border:0;border-radius:999px;
+    background:#e83e78;color:white;text-decoration:none;font-weight:700;cursor:pointer;
+    box-shadow:0 12px 28px rgba(232,62,120,.25);transition:.2s
+  }
+  .btn:hover{transform:translateY(-3px);box-shadow:0 16px 35px rgba(232,62,120,.32)}
+  .title{text-align:center;margin-bottom:45px}
+  .title h2{font-size:42px;color:#d92f6c}
+  .title p{margin-top:10px;color:#866574}
+  .letter-wrap{max-width:820px;margin:auto}
+  .letter{
+    background:#fff;padding:45px;border-radius:24px;box-shadow:0 20px 60px rgba(125,54,83,.12);
+    border:1px solid #ffe0ea;line-height:1.9;font-size:17px
+  }
+  .letter .hello{font-size:25px;font-weight:800;color:#d92f6c;margin-bottom:18px}
+  .signature{text-align:right;margin-top:25px;font-weight:700;color:#d92f6c}
+  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:1050px;margin:auto}
+  .card{background:white;padding:30px;border-radius:22px;border:1px solid #ffe0ea;text-align:center;
+    box-shadow:0 12px 35px rgba(125,54,83,.08);transition:.25s}
+  .card:hover{transform:translateY(-7px)}
+  .icon{font-size:40px;margin-bottom:15px}
+  .card h3{color:#d92f6c;margin-bottom:10px}
+  .card p{color:#765767;line-height:1.6}
+  .promise{background:#fff0f6}
+  .promise-box{max-width:780px;margin:auto;text-align:center;background:white;padding:45px;border-radius:28px;
+    box-shadow:0 20px 55px rgba(125,54,83,.1)}
+  .promise-box p{font-size:20px;line-height:1.8;color:#634252}
+  .surprise{text-align:center;background:linear-gradient(135deg,#fff0f6,#ffe2ed)}
+  #surpriseText{display:none;max-width:720px;margin:30px auto 0;background:white;padding:30px;border-radius:22px;
+    color:#693f53;font-size:19px;line-height:1.8;box-shadow:0 15px 40px rgba(125,54,83,.12)}
+  footer{position:relative;z-index:1;text-align:center;padding:28px;color:#9b7182;background:#fff}
+  @media(max-width:700px){
+    nav a{display:none}
+    section{padding-left:6%;padding-right:6%}
+    .cards{grid-template-columns:1fr}
+    .letter{padding:28px}
+  }
+</style>
+</head>
+<body>
+<div class="hearts" id="hearts"></div>
+
+<nav>
+  <div class="logo">♡ For My Bubu</div>
+  <div><a href="#letter">Letter</a><a href="#memories">Us</a><a href="#surprise">Surprise</a></div>
+</nav>
+
+<section class="hero">
+  <div>
+    <span class="badge">Happy GF Day, my love 💗</span>
+    <h1>Hey Bubu,<br>this is for you.</h1>
+    <h2>You make my ordinary days feel special.</h2>
+    <p>
+      No fancy reason. No big occasion needed. I just wanted to make you
+      a little corner of the internet that belongs to us.
+    </p>
+    <a class="btn" href="#letter">Open Your Letter 💌</a>
+  </div>
+</section>
+
+<section id="letter">
+  <div class="title"><h2>A Little Letter</h2><p>Read this when you need a reminder of how loved you are.</p></div>
+  <div class="letter-wrap">
+    <div class="letter">
+      <div class="hello">My bubu, 💗</div>
+      <p>
+        Happy GF Day, bacha. I don't think I can fit everything I feel for you
+        into one little website, but I still wanted to try. You have become
+        such a beautiful part of my life, and even the smallest moments with
+        you can mean so much to me.
+      </p>
+      <br>
+      <p>
+        Happy GF Day, bacha. ❤️
+
+I don't think I can fit everything I feel for you into one little website, one letter, or even a thousand words, but I still wanted to try. There are so many things I want to say to you, so many little feelings that I don't always know how to explain properly. Sometimes I feel like even if I sat down and wrote everything that's in my heart, I would still look at the page afterward and think, “This still isn't enough.” But today, I just want to try anyway.
+
+You have become such a beautiful part of my life. Somewhere along the way, you stopped being just another person I talked to and became someone whose presence could change my entire day. A message from you could make me smile. A random conversation could stay in my head for hours. Even the smallest things—your silly replies, your little moods, the way you say certain things, the random jokes, the moments when we're both being complete idiots—somehow became memories that I genuinely treasure.
+
+And that's what I love about us. It isn't only the big moments.
+
+It's the tiny ones too.
+
+It's the random “what are you doing?” messages. It's staying up talking about things that probably made absolutely no sense. It's laughing at something that wouldn't even be funny to anyone else. It's those moments where we somehow start talking about one thing and end up discussing ten completely unrelated things. It's the little teasing, the cute arguments, the apologies, the “okay fine” moments, the times when one of us is being stubborn, and all those little things that make our relationship feel like ours.
+
+I love your silly side, bacha.
+
+I love the side of you that doesn't always have everything figured out. I love your cute little moods, your random thoughts, your expressions, your reactions, and all those tiny things that make you *you*. I love when you're excited about something and can't stop talking about it. I love when you get playful. I love the moments when you don't even realize how cute you're being.
+
+Sometimes I probably don't say it enough, but I notice those things.
+
+I notice the little things.
+
+And I hope you know that.
+
+I don't love some perfect version of you that exists only on your best days. I love the real you—the girl who can be happy, annoyed, excited, confused, emotional, silly, quiet, stubborn, affectionate, and everything in between. You don't have to be perfect for me to care about you. You don't have to have the perfect words. You don't have to pretend that everything is okay when it isn't.
+
+You can just be you.
+
+And honestly, that's enough.
+
+More than anything, I hope you always remember that you deserve love. Real love. The kind that comes with patience, respect, understanding, honesty, and effort. You deserve someone who listens when you're talking, not just someone who waits for their turn to speak. You deserve someone who cares about the things that matter to you, even when they might seem small to someone else.
+
+And I hope I can always be someone who reminds you of that.
+
+I know I'm not perfect, bacha.
+
+I know there are times when I say the wrong thing, misunderstand something, get emotional, or don't know exactly what to do. Sometimes I might not have the perfect response. Sometimes I might not understand what you're feeling immediately. Sometimes I might make mistakes even when my intention was never to hurt you.
+
+But one thing I never want you to doubt is that you matter to me.
+
+You matter to me more than a silly argument, more than one bad conversation, more than one misunderstanding, more than one difficult day.
+
+I don't want our relationship to be about proving who is right or who cares more. I want it to be about two people who can look at each other and say, “Okay, we're having a difficult moment, but you're still important to me.”
+
+Because that's what love means to me.
+
+It's not about pretending that nothing ever goes wrong.
+
+It's about caring enough to communicate when something does.
+
+It's about being able to say sorry without making it a competition.
+
+It's about being able to say “that hurt me” without being afraid.
+
+It's about listening.
+
+It's about understanding.
+
+It's about giving each other space when needed and being there when the other person needs comfort.
+
+And most importantly, it's about remembering that the person you're talking to isn't your enemy.
+
+It's the person you care about.
+
+That's what I want for us.
+
+I want more laughter.
+
+More stupid conversations.
+
+More random memories.
+
+More pictures that we take and then laugh at later.
+
+More moments where we're together and completely forget about everything else for a while.
+
+More hugs.
+
+More little surprises.
+
+More “I miss you” messages.
+
+More “come here” moments.
+
+More days where we can just be ourselves without worrying about anything.
+
+And I want us to keep growing—not just as a couple, but as two individual people too.
+
+I want to see you achieve the things you dream about. I want to see you become proud of yourself. I want to see you chase the things that make you happy. I want you to have your own dreams, your own goals, your own friendships, your own passions, and your own little world outside of me.
+
+And I want to be someone who supports that.
+
+Because loving someone doesn't mean holding them back.
+
+It means wanting to see them become the person they want to be.
+
+So if one day you accomplish something you've been working toward, I want to be the person cheering the loudest.
+
+If you're scared about something, I want to be someone you can talk to.
+
+If you're having a terrible day, I want to remind you that one terrible day doesn't define your life.
+
+If you're happy, I want to celebrate with you.
+
+If you're proud of yourself, I want to be proud with you.
+
+And if you ever forget how special you are, I hope this letter reminds you.
+
+You are special to me.
+
+Not because you're perfect.
+
+Not because everything about us is always easy.
+
+But because you're *you*.
+
+And because somewhere along the way, you became someone whose happiness started mattering to me in a very real way.
+
+I think that's one of the strangest and most beautiful things about loving someone.
+
+You start collecting tiny memories without even realizing it.
+
+A conversation.
+
+A joke.
+
+A look.
+
+A random message.
+
+A silly nickname.
+
+A song.
+
+A place.
+
+A particular day.
+
+A particular moment.
+
+And suddenly those tiny things become pieces of a story.
+
+Our story.
+
+And when I think about everything we've shared, I don't just remember the big moments. I remember the little ones.
+
+I remember the laughs.
+
+I remember the conversations.
+
+I remember the random nonsense.
+
+I remember the moments where we were just being ourselves.
+
+I remember how sometimes we could turn the most ordinary situation into something memorable.
+
+And those memories mean so much to me.
+
+Thank you for them.
+
+Thank you for every laugh you've given me.
+
+Thank you for every time you've made me smile.
+
+Thank you for every conversation.
+
+Thank you for every little moment where you made an ordinary day feel different.
+
+Thank you for letting me know different parts of you.
+
+Thank you for trusting me with your thoughts.
+
+Thank you for being there during the moments when I needed someone.
+
+Thank you for simply being part of my life.
+
+I know people sometimes say “forever” very easily.
+
+But I don't want to make some giant promise just because it sounds romantic.
+
+Instead, I want to appreciate what we have right now.
+
+Today.
+
+This moment.
+
+This chapter.
+
+This version of us.
+
+Because this moment is real.
+
+And I'm grateful for it.
+
+I'm grateful that our paths crossed.
+
+Out of all the people we could have met, somehow we found each other.
+
+And that's pretty crazy when you think about it.
+
+There are billions of people in the world.
+
+Different cities.
+
+Different lives.
+
+Different stories.
+
+And somehow, our stories crossed.
+
+You became my bacha.
+
+I became your bbubu.
+
+And suddenly we had our own little world filled with nicknames, jokes, memories, conversations, and feelings that only we completely understand.
+
+That's something I'll always be grateful for.
+
+Sometimes I wonder if you realize how much your presence has affected me.
+
+You've taught me things too.
+
+You've taught me that caring about someone means paying attention.
+
+You've taught me that the little things matter.
+
+You've taught me that sometimes a simple “I'm here” can mean more than a huge speech.
+
+You've given me memories that I wouldn't have had otherwise.
+
+And you've given me a person to care about in a way that is difficult to explain.
+
+So today, on GF Day, I don't just want to say “Happy GF Day.”
+
+I want to say:
+
+Thank you.
+
+Thank you for being you.
+
+Thank you for existing in my little corner of the world.
+
+Thank you for all the moments we've shared.
+
+Thank you for every laugh.
+
+Thank you for every silly conversation.
+
+Thank you for every cute moment.
+
+Thank you for every memory.
+
+Thank you for every time you made me smile without even trying.
+
+And thank you for giving me the chance to love you.
+
+I hope you never feel like you have to earn love by being perfect.
+
+You don't.
+
+I hope you never feel like you have to hide your emotions to be easier to love.
+
+You don't.
+
+I hope you never feel like your feelings are “too much.”
+
+They're yours, and they matter.
+
+I hope you always know that you deserve to be heard.
+
+You deserve kindness.
+
+You deserve respect.
+
+You deserve patience.
+
+You deserve someone who doesn't make you feel like caring about you is a burden.
+
+And I hope, in whatever way I can, I can give you those things too.
+
+There will probably be days when we're both tired.
+
+There will probably be days when we misunderstand each other.
+
+There will probably be days when one of us says something badly or reacts badly.
+
+That's life.
+
+We're human.
+
+But I hope that whenever those days come, we remember the good days too.
+
+I hope we remember why we started.
+
+I hope we remember all the times we laughed.
+
+I hope we remember all the little memories that made us smile.
+
+I hope we remember that one difficult conversation doesn't erase everything beautiful.
+
+And I hope we learn to choose understanding over assumptions.
+
+Communication over silence.
+
+Honesty over guessing.
+
+Kindness over anger.
+
+And love over ego.
+
+Because I don't want a relationship that looks perfect from the outside.
+
+I want something real.
+
+Something where we can laugh like idiots one day and have a serious conversation the next.
+
+Something where we can tell each other when something hurts.
+
+Something where we can celebrate each other's wins.
+
+Something where we can grow.
+
+Something where both people feel heard.
+
+Something where love feels like a safe place to come back to.
+
+That's the kind of relationship I want.
+
+And that's the kind of love I want to give you.
+
+So, bacha, if you're reading this right now, I want you to stop for a second.
+
+Take a breath.
+
+Smile a little.
+
+And remember that somewhere in this world, there is a boy who is sitting here thinking about you and smiling while writing all of this.
+
+You have your own little place in my heart.
+
+A place filled with your name, your memories, your silly moments, your laughter, your cute moods, and all the little things that make you who you are.
+
+And no matter how many words I write, I still won't be able to explain all of it properly.
+
+But maybe I don't need to.
+
+Maybe love isn't always something that can be perfectly explained.
+
+Maybe sometimes it's just that feeling you get when you see someone's name appear on your phone and instantly smile.
+
+Maybe it's missing someone after only a little while.
+
+Maybe it's wanting to tell them something random because they're the first person you thought of.
+
+Maybe it's remembering tiny details they mentioned months ago.
+
+Maybe it's wanting to make them happy.
+
+Maybe it's looking at them and thinking, “How did I get so lucky to meet you?”
+
+Maybe it's all of those things.
+
+And if that's what love is, then bacha, I hope you know how much of it I feel for you.
+
+I don't know what every tomorrow will look like.
+
+None of us do.
+
+Life changes.
+
+People grow.
+
+Plans change.
+
+Days become memories.
+
+But today, I know one thing for sure.
+
+I'm grateful for you.
+
+I'm grateful for the girl who became my bacha.
+
+I'm grateful for the laughs.
+
+I'm grateful for the memories.
+
+I'm grateful for the conversations.
+
+I'm grateful for every silly moment.
+
+I'm grateful for every beautiful moment.
+
+And I'm grateful that our paths crossed.
+
+So Happy GF Day, my bacha.
+
+Happy GF Day to the girl who makes my days a little brighter.
+
+Happy GF Day to my laddu rani.
+
+Happy GF Day to my bubu.
+
+And Happy GF Day to someone who means much more to me than a simple paragraph could ever explain.
+
+I hope this little website makes you smile.
+
+I hope it reminds you of the good memories.
+
+I hope it makes you feel loved.
+
+And most importantly, I hope you remember that you don't have to be anyone other than yourself for me to think you're special.
+
+You are already enough.
+
+You are already worth caring about.
+
+You are already worth listening to.
+
+And you are already someone I will always be grateful to have met.
+
+So here's to our memories.
+
+Here's to our silly conversations.
+
+Here's to the laughs.
+
+Here's to the little moments.
+
+Here's to the days we haven't lived yet.
+
+Here's to the memories we haven't made yet.
+
+And here's to you.
+
+My bacha.
+
+My bubu.
+
+My laddu rani.
+
+Thank you for being you.
+
+Thank you for being a part of my life.
+
+And thank you for giving me so many reasons to smile.
+
+I love you, bacha. ❤️
+
+Happy GF Day. 🫶🏻🌷
+
+— Your bbubu
+      
+      </p>
+      <div class="signature">Mela laddu, I love you. 🫶🏻<br>— Your Dudu</div>
+    </div>
+  </div>
+</section>
+
+<section id="memories">
+  <div class="title"><h2>Things I Love About Us</h2><p>Three tiny reminders of why our story is special.</p></div>
+  <div class="cards">
+    <div class="card"><div class="icon">🥹</div><h3>The Little Things</h3><p>Random conversations, inside jokes, silly moments, and the tiny things that somehow become our favourite memories.</p></div>
+    <div class="card"><div class="icon">🫶🏻</div><h3>Our Comfort</h3><p>That feeling of being able to be completely ourselves, whether we're talking about everything or absolutely nothing.</p></div>
+    <div class="card"><div class="icon">🌷</div><h3>Our Memories</h3><p>Every hug, every laugh, every late conversation and every moment that made us think, “yeah… this is us.”</p></div>
+  </div>
+</section>
+
+<section class="promise">
+  <div class="title"><h2>A Tiny Promise</h2></div>
+  <div class="promise-box">
+    <p>
+     My bacha, I can't promise that every day will be perfect. I can't promise that we'll never misunderstand each other, never get annoyed, never have a bad day, or never say something we didn't mean. We're both human, and sometimes emotions become bigger than our words. Sometimes life gets stressful, sometimes we're tired, and sometimes we simply don't know how to explain what's going on inside our heads. I can't promise that none of those moments will ever happen.
+
+But I can promise that I'll keep trying.
+
+I can promise to keep choosing honesty, even when telling the truth feels difficult. I want us to be able to talk about what we're feeling instead of hiding it, assuming things, or letting small problems become bigger ones. I want you to feel like you can tell me when something hurts, when you're upset, when you're scared, or when you simply need me to listen.
+
+I can promise to choose kindness, especially on the days when we're frustrated with each other. I never want a difficult moment to become an excuse to forget how much you mean to me. Even when we're angry, I want to remember that you're still my bacha, still someone I care about, and still someone whose feelings matter to me.
+
+I can promise patience. I won't always understand everything immediately, and sometimes I may need time to understand what you're trying to tell me. But I want to learn. I want to listen instead of rushing to defend myself. I want to understand the feeling behind the words, not just the words themselves.
+
+I can promise communication. I don't want us to become strangers inside the same relationship. I want us to talk, even when conversations are uncomfortable. I want us to be able to say, “This hurt me,” or “I need you right now,” without being afraid of being judged. I want us to solve things together rather than treating each other like opponents.
+
+And most importantly, I can promise the little efforts.
+
+The random messages.
+
+The “did you eat?” texts.
+
+The good morning and goodnight wishes.
+
+The little surprises.
+
+The hugs.
+
+The reminders that you're loved.
+
+The moments where I simply sit and listen to you.
+
+The times when I remember something you told me weeks ago because it mattered to you.
+
+Because I don't think love is only about huge gestures. I think love lives in the small things we choose to do again and again.
+
+I want to keep choosing you with those little efforts.
+
+I want our relationship to feel like a place where both of us can breathe, be ourselves, make mistakes, learn, laugh, grow, and still feel loved.
+
+So no, bacha, I can't promise perfection.
+
+But I can promise effort.
+
+I can promise that when things get difficult, I'll try to communicate instead of disappearing. I'll try to understand instead of assuming. I'll try to apologize when I'm wrong instead of letting pride get in the way.
+
+And whenever we have a difficult day, I hope we remember that one bad moment doesn't have to define our whole story.
+
+I can't promise perfect days.
+
+But I can promise that I'll keep trying to make our ordinary days a little more beautiful.
+
+That's my promise to you, bacha. ❤️
+ 💗
+    </p>
+  </div>
+</section>
+
+<section id="surprise" class="surprise">
+  <div class="title"><h2>One Last Thing… 👀</h2><p>Press the button. I promise it's cute.</p></div>
+  <button class="btn" onclick="showSurprise()">Open My Secret Message 💌</button>
+  <div id="surpriseText">
+    <b>BUBUUUUU 😭💗</b><br><br>
+    If you're reading this, congratulations — you have officially been
+    attacked by maximum cuteness. Now come here and give your Dudu a hug. 🫂
+    <br><br>
+    <span style="color:#e83e78;font-weight:800">Happy GF Day, my laddu rani. ❤️</span>
+  </div>
+</section>
+
+<footer>Made with way too much love ♡</footer>
+
+<script>
+function showSurprise(){
+  const box=document.getElementById('surpriseText');
+  box.style.display='block';
+  box.scrollIntoView({behavior:'smooth',block:'center'});
+  for(let i=0;i<18;i++){
+    const h=document.createElement('div');
+    h.textContent=['💗','💕','💖','🌸','✨'][Math.floor(Math.random()*5)];
+    h.style.cssText=`position:fixed;left:${Math.random()*100}vw;top:${Math.random()*70+15}vh;font-size:${18+Math.random()*25}px;z-index:20;pointer-events:none;animation:pop 2s ease-out forwards`;
+    document.body.appendChild(h);
+    setTimeout(()=>h.remove(),2000);
+  }
+}
+const style=document.createElement('style');
+style.textContent='@keyframes pop{0%{transform:scale(.3) translateY(30px);opacity:0}20%{opacity:1}100%{transform:scale(1.3) translateY(-150px) rotate(20deg);opacity:0}}';
+document.head.appendChild(style);
+
+const container=document.getElementById('hearts');
+for(let i=0;i<22;i++){
+  const h=document.createElement('span');
+  h.className='heart';
+  h.textContent=['♥','♡','💗','💕'][Math.floor(Math.random()*4)];
+  h.style.left=Math.random()*100+'%';
+  h.style.animationDelay=Math.random()*7+'s';
+  h.style.animationDuration=(5+Math.random()*5)+'s';
+  h.style.fontSize=(14+Math.random()*20)+'px';
+  container.appendChild(h);
+}
+</script>
+</body>
+</html>
